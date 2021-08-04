@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/react-ros-robot/static/css/main.01e13190.chunk.css",
+    "main.js": "/react-ros-robot/static/js/main.2bd116e6.chunk.js",
+    "main.js.map": "/react-ros-robot/static/js/main.2bd116e6.chunk.js.map",
+    "runtime-main.js": "/react-ros-robot/static/js/runtime-main.949a84fd.js",
+    "runtime-main.js.map": "/react-ros-robot/static/js/runtime-main.949a84fd.js.map",
+    "static/js/2.9e9361f9.chunk.js": "/react-ros-robot/static/js/2.9e9361f9.chunk.js",
+    "static/js/2.9e9361f9.chunk.js.map": "/react-ros-robot/static/js/2.9e9361f9.chunk.js.map",
+    "static/js/3.33a60e59.chunk.js": "/react-ros-robot/static/js/3.33a60e59.chunk.js",
+    "static/js/3.33a60e59.chunk.js.map": "/react-ros-robot/static/js/3.33a60e59.chunk.js.map",
+    "index.html": "/react-ros-robot/index.html",
+    "static/css/main.01e13190.chunk.css.map": "/react-ros-robot/static/css/main.01e13190.chunk.css.map",
+    "static/js/2.9e9361f9.chunk.js.LICENSE.txt": "/react-ros-robot/static/js/2.9e9361f9.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.949a84fd.js",
+    "static/js/2.9e9361f9.chunk.js",
+    "static/css/main.01e13190.chunk.css",
+    "static/js/main.2bd116e6.chunk.js"
+  ]
+}
