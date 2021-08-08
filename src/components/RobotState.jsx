@@ -2,6 +2,24 @@ import React, { Component } from 'react';
 import { Row, Col, Container, Button } from 'react-bootstrap';
 import Config from '../scripts/config';
 import * as Three from 'three';
+import { 
+  ResponsiveContainer,
+  AreaChart,
+  XAxis,
+  YAxis,
+  Area,
+  Tooltip,
+  CartesianGrid,
+} from 'recharts';
+import { format, parseISO, subDays } from "date-fns";
+
+// const linearData = [];
+// for (let num = 30; num >= 0; num--) {
+//   linearData.push({
+//     date: subDays(new Date(), num).toISOString().substr(0,10),
+//     value: 1 + Math.random(),
+//   });
+// }
 
 class RobotState extends Component {
   state = { 
@@ -10,7 +28,8 @@ class RobotState extends Component {
     y: 0,
     orientation: 0,
     linear_velocity: 0,
-    angular_velocity: 0
+    angular_velocity: 0,
+    linearData: []
   };
 
   constructor() {

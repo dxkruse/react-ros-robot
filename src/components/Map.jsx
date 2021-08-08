@@ -72,6 +72,11 @@ class Map extends Component {
       serverName: "/move_base",
       withOrientation: true
     })
+
+    // console.log(navClient.currentGrid.width)
+    // Scale the canvas to fit to the map
+    // viewer.scaleToDimensions(navClient.currentGrid.width, navClient.currentGrid.height);
+    // viewer.shift(navClient.currentGrid.pose.position.x, navClient.currentGrid.pose.position.y);
   }
 
 

@@ -3,6 +3,7 @@ import Connection from './Connection';
 import RobotState from './RobotState';
 import Map from './Map';
 import Teleoperation from './Teleoperation';
+import VelocityGraph from './VelocityGraph';
 import { Row, Col, Container, Button } from 'react-bootstrap';
 
 
@@ -21,11 +22,13 @@ render() {
           <Connection />
         </Col>
       </Row>
+
       <Row>
         <Col>
           <Teleoperation />
         </Col>    
       </Row>
+
       <Row>
         <Col>
           <RobotState />
@@ -35,6 +38,7 @@ render() {
           <Map />
         </Col>
       </Row>
+
     </Container>
     </div>
   );
