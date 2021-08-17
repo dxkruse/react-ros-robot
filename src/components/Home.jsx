@@ -1,48 +1,43 @@
 import React, { Component } from 'react';
-import Connection from './Connection';
-import RobotState from './RobotState';
-import Map from './Map';
-import Teleoperation from './Teleoperation';
-import VelocityGraph from './VelocityGraph';
-import { Row, Col, Container, Button } from 'react-bootstrap';
-
-
+import ArrowKeysReact from 'arrow-keys-react';
+ 
 class Home extends Component {
-  state = { 
-    
-  };
+  constructor(props){
+    super(props);
+    this.state = {
+      content: 'Home Page Content under development, Click through the navigation bar to explore my projects'
+    };
+    ArrowKeysReact.config({
+      left: () => {
+        this.setState({
+          content: 'left key detected.'
+        });
+      },
+      right: () => {
+        this.setState({
+          content: 'right key detected.'
+        });
+      },
+      up: () => {
+        this.setState({
+          content: 'up key detected.'
+        });
+      },
+      down: () => {
+        this.setState({
+          content: 'down key detected.'
+        });
+      }
+    });
+  }
 
-render() { 
-  return ( 
-    <div>
-    <Container>
-      <h1 className="text-center mt-3">Robot Control Page</h1>
-      <Row>
-        <Col>
-          <Connection />
-        </Col>
-      </Row>
-
-      <Row>
-        <Col>
-          <Teleoperation />
-        </Col>    
-      </Row>
-
-      <Row>
-        <Col>
-          <RobotState />
-        </Col>
-        <Col>
-          <h1>MAP</h1>
-          <Map />
-        </Col>
-      </Row>
-
-    </Container>
-    </div>
-  );
+  render() {
+    return (
+      <div {...ArrowKeysReact.events} tabIndex="1">
+        {this.state.content}
+      </div>
+    );
   }
 }
- 
+
 export default Home;

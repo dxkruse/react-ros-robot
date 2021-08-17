@@ -82,6 +82,7 @@ class RobotState extends Component {
   componentDidMount() {
     this.getRobotState();
   }
+  
   getRobotState() {
     //Creates a pose subscriber
     var pose_subscriber = new window.ROSLIB.Topic({
